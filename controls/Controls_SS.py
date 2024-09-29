@@ -65,7 +65,7 @@ def commandInputs(toys): # needs to be able to consistently take in data
 
     #commands = [[], [], []]
 
-    command =  ["C:000:255:120", "M:155:0.25", "R:90", "M:255:0.25", "R:30", "D:2", "M:100:0.5", "%"]
+    command =  ["CALIBRATE", "C:000:255:120", "M:155:0.25", "R:90", "M:255:0.25", "R:30", "D:2", "M:100:0.5", "%"]
     for toy in toys:
         commands.append(command) # matrix is needed for more complex commands
         allReady.append([0] * len(command))
